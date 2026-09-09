@@ -1,0 +1,20 @@
+:root{
+    --color-bg: rgb(254, 197, 144);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: grid;
+    justify-content: center;
+    margin: 2em auto;
+    max-width: 1200px;
+}
+
+img{
+    max-width: 100%;
+}

@@ -1,0 +1,28 @@
+---
+import Header from "../components/Header.astro";
+import Card from "../components/Card.astro";
+import astrocss from "../assets/AdobeStock_881872123.jpeg";
+import astronaut from "../assets/AdobeStock_250976339.jpeg";
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Hygge med CSS</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>Her er der nogle cards der er stylet i deres komponent</h1>
+      <section>
+        <Card headline="Her er et billede af en udvikler" image={astrocss} />
+        <Card headline="Her er et billede af en astronaut" image={astronaut} />
+      </section>
+    </main>
+  </body>
+</html>
