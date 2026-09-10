@@ -19,9 +19,19 @@ import "../styles/global.css";
     <Header />
     <main>
       <h1>Her er der nogle cards der er stylet i deres komponent</h1>
+      <h2>Dette er en underoverskrift</h2>
       <section>
-        <Card headline="Her er et billede af en udvikler" image={astrocss} />
-        <Card headline="Her er et billede af en astronaut" image={astronaut} />
+        <Card
+          headline="Her er en overskrift"
+          tekst="Her er der også noget tekst"
+          image={astrocss}
+          
+        />
+        <Card
+          headline="En astronaut"
+          tekst="Dette er et billede af en astronaut"
+          image={astronaut}
+        />
       </section>
     </main>
   </body>

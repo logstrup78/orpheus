@@ -1,20 +1,22 @@
 ---
+const { headline, tekst, image } = Astro.props;
 import { Image } from "astro:assets";
-const {headline, image} = Astro.props;
 ---
 
 <article>
   <h2>{headline}</h2>
-  <Image src={image} alt={headline} width="300"/>
+  <p>{tekst}</p>
+  <Image src={image} alt="et billede af noget" width="200" height="200" />
 </article>
 
 <style>
   article {
-    margin-block: 2rem;
-    width: 50%;
     border: 1px solid black;
+    width: 200px;
   }
-  img{
-    object-fit: cover;
+  h2 {
+    color: blue;
+  }
+  img {
   }
 </style>
